@@ -1,5 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { name } from '../src/index.mjs';
+import { name, greet } from '../src/index.mjs';
 
 test('fixture name', () => assert.equal(name, 'fixture'));
+
+test('greet', () => assert.equal(greet('Ada'), 'Hello, Ada!'));
